@@ -1,3 +1,13 @@
+# Form2 — formulário de cadastro por etapas
+
+Exercício React organizado em dados do usuário, dados pessoais, entrega e agradecimento, com `Stepper` do Material UI. `FormularioCadastro` acumula os dados em estado local; o callback de `App.js` os escreve no console. A etapa chamada Login não equivale a autenticação implementada, e esse fluxo não persiste um cadastro em backend.
+
+As validações são fornecidas por contexto. `validarCPF` testa apenas comprimento 11; `validarSenha` aceita comprimento de 4 a 72, e também é usada para o campo nome no provider. Isso não valida dígitos de CPF nem estabelece uma política segura de senha. Use dados fictícios: os dados coletados são encaminhados ao console.
+
+O projeto usa React 16, Material UI 4 e react-scripts 5. Os comandos do Create React App estão descritos abaixo. Instale as dependências com `npm install` antes de iniciar o ambiente local.
+
+## Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -23,7 +33,7 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The generated files can be used to prepare a deployment.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
